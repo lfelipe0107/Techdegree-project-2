@@ -12,12 +12,17 @@ body {
     margin: 0 auto;
 }
 
+header {
+    padding-top: 25px;
+    background-color: whitesmoke;
+}
+
 .main-nav {
     display: inline-block;
     margin-bottom: 0;
     background-color: whitesmoke;
     color: black;
-    text-align: right;
+    /* text-align: right; */
     /* padding-top: 30px;
     padding-bottom: 30px; */
 }
@@ -93,7 +98,7 @@ img {
 }
 
 main div {
-    width: 350px;
+    /* width: 350px; */
     padding: 10px;
     border: 5px;
     margin: 10px;
@@ -121,16 +126,16 @@ main div {
 .search,
 .travel {
     display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
 }
 
 .maps,
 .gallery,
 .calculator {
     display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
 }
 
 #portfolio {
@@ -209,6 +214,10 @@ main div {
     body {
         padding-bottom: 0;
     }
+
+    main div {
+        width: 38%;
+    }
     
     .main-nav li {
         display: block;
@@ -224,11 +233,13 @@ main div {
     }
 
     .main-nav .mnav-content {
-        display: inline;
+        width: unset;
+        display: inline-block;
+        margin: 0 auto;
         text-align: center;
         padding-top: 5px;
-        padding-right: 110px;
-        padding-left: 0;
+        /* padding-right: 110px;
+        padding-left: 0; */
     }
 
     .profile-img{
@@ -310,21 +321,34 @@ main div {
 
 @media (min-width: 1024px) {
     
-    .main-header {
-        max-width: 1300px;
+    .name {
+        display: inherit;
+        float: left;
+        padding-left: 35px
     }
+    main div {
+        width: 29%;
+    }
+    /* .main-header {
+        max-width: 1300px;
+    } */
 
     .main-nav {
-        max-width: 1300px;
+        /* max-width: 1300px; */
+        width: 75%;
+        text-align: right;
+        display: inline-block;
+        padding: 0;
     }
 
     .mnav-content {
         padding-right: 15px;
     }
-    
-    .main-nav .name {
-        float: left;
-        padding-top: 15px;
+
+    .main-nav .mnav-content {
+        padding-right: 0;
+        margin-left: 25px;
+        /* line-height: 4.5; */
     }
 
     .profile-img {

@@ -179,9 +179,26 @@ main div {
     background-color: whitesmoke;
     color: black;
     text-align: right;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 5px;
     border-top-style: solid black;
+}
+
+.footer-nav .name {
+    float: left;
+    font-size: 15px;
+    margin-top: 9px;
+    padding-bottom: 10px;
+}
+
+.footer-nav .to-top {
+    display: inline-end;
+    font-size: small;
+    text-align: right;
+}
+
+.footer-nav .footer-info {
+    display: none;
 }
 /*  Media Queries  */
 
@@ -192,11 +209,24 @@ main div {
     }
     
     .main-nav li {
-        display: inline-block;
+        display: block;
         text-align: center;
         background-color: whitesmoke;
         margin: 0;
         padding-top: 25px;
+    }
+
+    .main-nav .name {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .main-nav .mnav-content {
+        display: inline;
+        text-align: center;
+        padding-top: 5px;
+        padding-right: 110px;
+        padding-left: 0;
     }
 
     .profile-img{
@@ -208,8 +238,7 @@ main div {
     }
 
     .main-nav {
-        padding-bottom: 25px;
-        padding-top: 15px;
+        padding: 15px 35px 25px;
     }
 
     .wrapper {
@@ -267,9 +296,30 @@ main div {
         font-size: medium;
         float: left;
     }
+
+    .footer-nav .footer-info {
+        display: inline;
+    }
+
+    .footer-nav .to-top {
+        display: none;
+    }
 }    
 
 @media (min-width: 1024px) {
+    
+    .main-header {
+        max-width: 1300px;
+    }
+
+    .main-nav {
+        max-width: 1300px;
+    }
+
+    .mnav-content {
+        padding-right: 15px;
+    }
+    
     .main-nav .name {
         float: left;
         padding-top: 15px;
@@ -277,7 +327,7 @@ main div {
 
     .profile-img {
         height: 200px;
-        width: 35%;
+        width: 33.3%;
         padding-right: 10px;
         padding-left: 20px;
         border-radius: 5px;
@@ -289,11 +339,13 @@ main div {
         padding-right: 20px;
     }
 
-   
-
     #contact {
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    #portfolio {
+        max-width: 1300px;
     }
 
     #contact p {
@@ -301,5 +353,13 @@ main div {
         padding-right: 35px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .footer-nav .footer-info {
+        display: inline;
+    }
+
+    .footer-nav .to-top {
+        display: none;
     }
 }
